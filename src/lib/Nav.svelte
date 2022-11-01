@@ -6,7 +6,7 @@
     let container: HTMLDivElement
     let opened: boolean = false
     let loaded: boolean = false
-    let path = "http://www.sitodiroberto.tk:5173/recs/"
+    let path = `http://${window.location.host}:5173/recs/`
 
     const openMenu = () => {
         opened = !opened
@@ -28,7 +28,7 @@
     <ul>
         <li>
             <h4>
-                <a href="http://www.sitodiroberto.tk:5173">Radio Web Alessi</a>
+                <a href={`http://${window.location.host}:5173`}>Radio Web Alessi</a>
             </h4>
         </li>
     </ul>
